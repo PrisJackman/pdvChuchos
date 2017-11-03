@@ -26,7 +26,7 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Mas Opciones <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Registrar Productos</a></li>
+            <li><a href="{{url('/registrar_productos')}}"">Registrar Productos</a></li>
             <li><a href="#">Registrar Categorias</a></li>
             <li><a href="#">Registrar Materia prima</a></li>
             <li><a href="#">Lista de Productos</a></li>
