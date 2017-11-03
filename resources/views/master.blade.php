@@ -1,10 +1,10 @@
 <html>
 <head>
-	<meta charset="UTF-8">
-	<title>Home</title>
-	<link rel="stylesheet" type="text/css" href="{{asset("css/bootstrap.css")}}">
-	<link rel="stylesheet" type="text/css" href="{{asset("css/Estilos.css")}}">
-	<script src="{{asset("js/jquery-3.2.1.js")}}"></script>
+  <meta charset="UTF-8">
+  <title>Home</title>
+  <link rel="stylesheet" type="text/css" href="{{asset("css/bootstrap.css")}}">
+ <!-- <link rel="stylesheet" type="text/css" href="{{asset("css/Estilos.css")}}">-->
+  <script src="{{asset("js/jquery-3.2.1.js")}}"></script>  
 </head>
 <body>
 <nav class="navbar navbar-default">
@@ -26,10 +26,9 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Mas Opciones <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Registrar Empleados</a></li>
             <li><a href="#">Registrar Productos</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Lista de Empleados</a></li>
+            <li><a href="#">Registrar Categorias</a></li>
+            <li><a href="#">Registrar Materia prima</a></li>
             <li><a href="#">Lista de Productos</a></li>
           </ul>
         </li>
@@ -48,14 +47,14 @@
       </ul>
     </div>
   </div>
-</nav>   
+</nav>
 
 <div class="container">
-	<div class="row">
-		<div class="col-xs-12">
-			@yield('contenido')
-		</div>
-	</div>
+  <div class="row">
+    <div class="col-xs-12">
+      @yield('contenido')
+    </div>
+  </div>
 </div>
 
 <script src="{{asset("js/bootstrap.js")}}"></script>
