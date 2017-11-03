@@ -17,3 +17,4 @@ Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('home');
 
+Route::get('/registrar_productos', 'productosController@vista_registro');
