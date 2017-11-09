@@ -29,7 +29,7 @@
             <li><a href="{{url('/registrar_productos')}}"">Registrar Productos</a></li>
             <li><a href="{{url('/consulta_productos')}}">Consultar Productos</a></li>
             <li class="divider"></li>
-            <li><a href="#">Registrar Categorias</a></li>
+            <li><a href="{{url('/registrar_categorias')}}">Registrar Categorias</a></li>
             <li class="divider"></li>
             <li><a href="#">Registrar Materia prima</a></li>
             <li><a href="{{url('/consulta_matprima')}}">Consultar Mat. prima</a></li>
