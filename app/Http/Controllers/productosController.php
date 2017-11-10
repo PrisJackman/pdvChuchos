@@ -16,7 +16,7 @@ class productosController extends Controller
     	->join ('categorias','productos.id_categoria','categorias.id')
     	->select('productos.*','categorias.descripcion as nom_categoria')
     	->get();
-
+        
     	return view('vista_prod', compact('productos'));
     }
 }
