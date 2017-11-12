@@ -8,7 +8,8 @@ use DB;
 class productosController extends Controller
 {
     public function vista_registro(){
-    	return view('vista_regprod');
+        $categorias=Categorias::all();
+    	return view('vista_regprod',compact('categorias'));
     }
 
     public function vista_productos(){
@@ -18,5 +19,11 @@ class productosController extends Controller
     	->get();
         
     	return view('vista_prod', compact('productos'));
+    }
+    public function guardar_productos(){
+        $producto= new Productos();
+        $producto->nombre=$datos->input('nombre');
+        $producto->precio=$datos->input('precio_unitario');
+
     }
 }
