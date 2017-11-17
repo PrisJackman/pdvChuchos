@@ -1,30 +1,62 @@
 @extends('master')
-
 @section('contenido')
-<div class="jumbotron" align="center">
-	<form action="{{url('guardarProductos')}}" method="POST">
-  <fieldset>
-    <legend>Registrar Producto</legend>
-    <div class="form-group">
-      <label for="nombre">Descripcion del producto</label>
-      <input class="form-control" id="" aria-describedby="emailHelp" placeholder="Escribir Descripcion" type="text" name="nombre">
-      <label for="categoria">Categoria:</label>
-      <select name="categoria" class="form-control">
-        @foreach($categorias as $c)
-        <option value="{{$c->id}}">{{$c->descripcion}}
-        
-      </option>
-      @endforeach
-      
+
+<form >
+  <div>
+    <label>Nombre:</label>
+    <input type="text" class="form-control" >
+  </div>
+  <div>
+    <label>Precio:</label>
+    <input type="text" class="form-control">
+  </div>
+  <br>
+
+  <div class="form-group">
+      <label for="exampleSelect1">Categorias</label>
+      <select class="form-control">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
       </select>
-      <label for="precio_unitario">Precio Unitario</label>
-      <input class="form-control" id="" aria-describedby="emailHelp" placeholder="Escribir Precio" type="text" name="precio_unitario">
-      <br>
-      <button class="btn btn-default" id="btnCategoria">Guardar</button> 
-      
     </div>
-	</form>
-  </fieldset>
-</div>
+
+<table class="table table-striped table-hover table-bordered">
+  <thead class="thead-dark">
+    <tr>
+      <th>#</th>
+      <th>Ingredientes</th>
+      <th>Cantidad</th>
+      <th>Agregar</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Column content</td>
+      <td></td>
+      <td>
+        <button type="button" class="btn btn-success">
+        <span  class="glyphicon glyphicon-plus"></span>
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Column content</td>
+      <td></td>
+      <td>
+      <button type="button" class="btn btn-success" >
+         <span  class="glyphicon glyphicon-plus"></span>
+
+      </button></td>
+    </tr>
+  </tbody>
+</table> 
+   <button type="button" class="btn btn-success">Registrar</button>
+</form> 
+
 
 @stop
