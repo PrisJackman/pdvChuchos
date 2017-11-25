@@ -3,7 +3,7 @@
   <meta charset="UTF-8">
   <title>Home</title>
   <link rel="stylesheet" type="text/css" href="{{asset("css/bootstrap.css")}}">
- <!-- <link rel="stylesheet" type="text/css" href="{{asset("css/Estilos.css")}}">-->
+  <link rel="stylesheet" type="text/css" href="{{asset("css/estilos2.css")}}">
   <script src="{{asset("js/jquery-3.2.1.js")}}"></script>  
 </head>
 <body>
