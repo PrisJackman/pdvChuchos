@@ -23,7 +23,6 @@ Route::get('/registrar_categorias', 'categoriasController@vista_registroc');
 Route::get('/registrar_matprima', 'matprimaController@vista_registrom');
 Route::get('/consulta_productos', 'productosController@vista_productos');
 Route::get('/consulta_matprima', 'matprimaController@vista_matprima');
-
 Route::post('/guardar_productos', 'productosController@guardar_productos');
 
 /*Caja*/
