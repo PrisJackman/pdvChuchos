@@ -27,3 +27,4 @@ Route::post('/guardar_productos', 'productosController@guardar_productos');
 
 /*Caja*/
 Route::get('/registrar_venta', 'ventasController@vista_registroventa');
+Route::get('/agregarProductos', 'ventasController@agregando_productos');

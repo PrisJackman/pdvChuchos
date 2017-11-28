@@ -9,30 +9,30 @@
           <section class="col-lg-6" id="s1">
             <article class="form-group">
             
-              <label class="control-label col-lg-2" >Folio</label> 
-              <div class="col-lg-4">   
-                <input type="number" name="" class="form-control">
-              </div>             
+              <label class="control-label col-lg-2">Nombre:</label>
+              <div class="col-lg-4">
+                <a href="#">{{ Auth::user()->name }}</a>
+              </div>              
               <label class="control-label col-lg-1" >Fecha</label>
               <div class="col-lg-5">
-                <a href="">{{$fecha}}</a>
+                <a href="#">{{$fecha}}</a>
               </div>          
               <br>
             </article>
             <article class="form-group">
-              <label class="control-label col-lg-2">Nombre:</label>
-              <div class="col-lg-10">
-                <a href="">{{ Auth::user()->name }}</a>
-              </div>   
-            <article>
-              
+              <label class="control-label col-lg-2" >Folio</label> 
+              <div class="col-lg-8">   
+                <input  name="" class="form-control">
+              </div>       
             </article>
             <br>
             <br>
             <br>
             <article>
               <!--<textarea   class="form-control" readonly="" rows="20" cols="50" id="textArea">-->
+                 @yield('productosagregados')
                 <table class="table table-striped table-hover ">
+                  
                   <thead>
                     <tr class="info">
                       <th>Producto</th>
@@ -63,7 +63,7 @@
                   <br>
                   <br>
                   <div class="col-lg-10 ">
-                     <button  class="btn btn-info circ">Papas locas</button>
+                     <button  class="btn btn-info circ" onclick="">Papas locas</button>
                      <button  class="btn btn-info circ">Cacahuatadas</button>
                      <button  class="btn btn-info circ">Cevicurros</button>
 

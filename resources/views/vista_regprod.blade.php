@@ -4,16 +4,17 @@
   <h1>Registro de Productos</h1>
 </div>
 
-<form >
+<form action="{{url('guardar_productos')}}" method="POST">
+<input id="token" type="hidden" name="_token" value="{{csrf_token()}}">
  <br><br><br><br>
   <div>
     <label>Nombre:</label>
-    <input type="text" class="form-control" >
+    <input type="text" class="form-control"  name="nombre">
   </div>
 
   <div>
     <label>Precio:</label>
-    <input type="text" class="form-control">
+    <input type="text" class="form-control" name="precio">
   </div>
   <br>
 
@@ -27,27 +28,7 @@
     </select>
   </div>
 
-<table class="table table-striped table-hover table-bordered ">
-    <thead class="thead-dark">
-      <tr class="info">
-        <th>ID</th>
-        <th>Nombre</th>
-        <th>Categoria</th>
-        <th>Precio Unitario</th>
-      </tr>
-    </thead>
-    <tbody>
-      @foreach($productos as $prod)
-      <tr>
-        <td>{{$prod->id}}</td>
-        <td>{{$prod->descripcion}}</td>
-        <td>{{$prod->nom_categoria}}</td>
-        <td>{{$prod->precio_unitario}}</td>
-      </tr>
-      @endforeach
-    </tbody>
-  </table> 
 
-   <button type="button" class="btn btn-success">Registrar</button>
+   <button type="submit" class="btn btn-success">Registrar</button>
 </form> 
 @stop
